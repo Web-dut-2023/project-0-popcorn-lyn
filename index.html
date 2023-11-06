@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Google Search</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+        }  
+          
+        #search-container {  
+            text-align: center;  
+            margin: 50px auto;  
+        }  
+          
+        #search-container input[type="text"] {  
+            width: 500px;  
+            padding: 10px;  
+            border: 2px solid #ccc;  
+            border-radius: 5px;  
+        }  
+          
+        #search-container button {  
+            width: 100%;  
+            padding: 10px;  
+            background-color: #0066cc;  
+            color: white;  
+            border: none;  
+            cursor: pointer;  
+        }  
+          
+        #search-container button:hover {  
+            background-color: #0033cc;  
+        }  
+          
+        #search-container a {  
+            text-decoration: none;  
+            color: blue;  
+            margin-top: 10px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="search-container">  
+        <input type="text" placeholder="Google Search" id="search-input">  
+        <button onclick="window.location.href='https://www.google.com/search?q=' + encodeURIComponent(document.getElementById('search-input').value)">Google Search</button>    
+        <button onclick="window.location.href='https://www.google.com/search?btnI=1&q=' + encodeURIComponent(document.getElementById('search-input').value)">I'm Feeling Lucky</button>
+        <li><a href="image.html">Image Search</a></li>
+        <li><a href="advanced.html">Advanced Search</a></li>
+    </div>  
+    
+
+</body>  
+</html>
